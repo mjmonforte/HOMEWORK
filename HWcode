@@ -1,0 +1,92 @@
+//
+//  homework.cpp
+//  HOMEWORK
+//
+//  Created by Mj Monforte on 20/04/2019.
+//  Copyright © 2019 Mj Monforte. All rights reserved.
+//
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int month, day, year;
+    string one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
+    
+    one = "January";
+    two = "February";
+    three = "March";
+    four = "April";
+    five = "May";
+    six = "June";
+    seven = "July";
+    eight = "August";
+    nine = "September";
+    ten = "October";
+    eleven = "November";
+    twelve = "December";
+
+    cout << "Instructions:Enter significant digits only" << endl;
+    cout << "Example: Place 1 not 01" << endl;
+    cout << ' ' << endl;
+    cout << ' ' << endl;
+    cout << "Enter month:"; cin >> month;
+    cout << "Enter day:"; cin >> day;
+    cout << "Enter year:"; cin >> year;
+    
+    if(month>12)
+       cout << "Invalid date!" << endl;
+    else if(day>31)
+        cout << "Invalid date!" << endl;
+    else if(year>2019)
+        cout << "Invalid date!" << endl;
+    else
+        switch(month)
+        {   case 1:
+                cout << one << ' ' << day << ',' << ' ' << year;
+                break;
+            case 2:
+            {
+                if (day>28)
+                    cout << "Invalid date!" << endl;
+            else
+                cout << two << ' ' << day << ',' << ' ' << year;}
+                break;
+            case 3:
+                cout << three << ' ' << day << ',' << ' ' << year;
+                break;
+            case 4:
+                cout << four << ' ' << day << ',' << ' ' << year;
+                break;
+            case 5:
+                cout << five << ' ' << day << ',' << ' ' << year;
+                break;
+            case 6:
+                cout << six << ' ' << day << ',' << ' ' << year;
+                break;
+            case 7:
+                cout << seven << ' ' << day << ',' << ' ' << year;
+                break;
+            case 8:
+                cout << eight << ' ' << day << ',' << ' ' << year;
+                break;
+            case 9:
+                cout << nine << ' ' << day << ',' << ' ' << year;
+                break;
+            case 10:
+                cout << ten << ' ' << day << ',' << ' ' << year;
+                break;
+            case 11:
+                cout << eleven << ' ' << day << ',' << ' ' << year;
+                break;
+            case 12:
+                cout << twelve << ' ' << day << ',' << ' ' << year;
+                break;
+        }
+    cout << ' ' << endl;
+    return 0;
+}
